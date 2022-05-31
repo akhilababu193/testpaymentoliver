@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buy cool new product</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section>
+      <div class="product">
+        <img src="./images/logo.png" alt="Oliver McCourty Platform" />
+        <div class="description">
+          <h3>Thank you for selecting Oliver McCourty for your services</h3>
+          <h5>GBP 2000.00</h5>
+        </div>
+      </div>
+      <form action="http://localhost/stripe/create-checkout-session.php" method="POST">
+        <button type="submit" id="checkout-button">Pay Now</button>
+      </form>
+    </section>
+  </body>
+</html>
